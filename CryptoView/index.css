@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0px;
+}
+
+nav {
+  height: 3rem;
+  background-color: #CAF0F8;
+}
+
+.flex_container {
+  display: flex;
+}
+
+.main > img {
+  width: 40%;
+}
+
+.trending_coin {
+  background-color: #CAF0F8;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+
+
+.features {
+  padding: 0.5rem;
+  background-color: #ADE8F4;
+}
+
+.features > .card {
+  text-align: center;
+}
+
+.card {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: white;
+}
