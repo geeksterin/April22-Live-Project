@@ -26,3 +26,9 @@ https://colors.muz.li/
 https://mycolor.space/
 https://cssgradient.io/
 https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8
+
+https://coolors.co/caf0f8-03045e-efefef-d9d9d9-eff2ef
+https://fontawesome.com
+
+
+BG -> EAEAEA upto F9F9F9

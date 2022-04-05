@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background-color: #EFEFEF;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -8,11 +9,21 @@ h1,h2,h3,h4,h5,h6,p {
 
 nav {
   height: 3rem;
-  background-color: #CAF0F8;
+  background-color: #FFFFFF;
 }
 
 .flex_container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main {
+  padding: 5rem;
+  justify-content: space-evenly;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: xx-large;
+  align-items: center;
 }
 
 .main > img {
@@ -21,22 +32,53 @@ nav {
 
 .trending_coin {
   background-color: #CAF0F8;
-  padding: 1rem;
+  padding: 2rem;
   justify-content: space-evenly;
+  font-family: 'Nunito', sans-serif;
+}
+
+.trending_coin > .card {
+  padding: 0.5rem 2rem;
+}
+
+.float-left {
+  float: left;
+}
+
+.ml_1 {
+  margin-left: 1rem;
+}
+
+.float-right {
+  float: right;
 }
 
 
 .features {
-  padding: 0.5rem;
+  padding: 2rem;
   background-color: #ADE8F4;
+  justify-content: space-around;
+  font-family: 'Nunito', sans-serif;
 }
 
 .features > .card {
   text-align: center;
+  padding: 1rem;
+  width: 25vw;
 }
 
 .card {
   padding: 0.5rem;
   border-radius: 5px;
   background-color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+footer > h3 {
+  padding-top: 0.5rem;
 }
