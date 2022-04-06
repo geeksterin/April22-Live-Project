@@ -33,12 +33,31 @@ nav {
 .trending_coin {
   background-color: #CAF0F8;
   padding: 2rem;
-  justify-content: space-evenly;
-  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 
-.trending_coin > .card {
+.trending_coin > .scroll_animation {
+  justify-content: space-evenly;
+  font-family: 'Nunito', sans-serif;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  position: relative;
+  animation-name: smooth_scroll;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.trending_coin .card {
   padding: 0.5rem 2rem;
+  margin: 0px 5vw;
+  width: 8rem;
+  flex-shrink: 0;
+}
+
+.trending_coin .card > img {
+  width: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .float-left {
@@ -52,7 +71,6 @@ nav {
 .float-right {
   float: right;
 }
-
 
 .features {
   padding: 2rem;
@@ -81,4 +99,13 @@ footer {
 
 footer > h3 {
   padding-top: 0.5rem;
+}
+
+@keyframes smooth_scroll {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
 }
