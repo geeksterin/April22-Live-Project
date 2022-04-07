@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Detail | CryptoView</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./detail.css" />
+  </head>
+  <body>
+    
+    <!-- This if the navigation bar -->
+    <nav>
+      <h1>Nav bar</h1>
+    </nav>
+
+    <!-- Description and Price Container -->
+    <section class="description_price flex_container">
+      <!-- Description Container -->
+      <div class="description flex_container">
+        <img src="" id="coin_img" alt="Coin Image" />
+        <div class="w_40">
+          <h1 id="coin_name"></h1>
+          <p class="text_justify" id="coin_description"></p>
+        </div>
+      </div>
+
+      <!-- Price container -->
+      <div class="price">
+        <table class="mt_1_25">
+            <tr>
+              <td>INR</td>
+              <td><span id="inr_price"></span></td>
+            </tr>
+            <tr>
+              <td>USD</td>
+              <td><span id="usd_price"></span></td>
+            </tr>
+            <tr>
+              <td>EUR</td>
+              <td><span id="eur_price"></span></td>
+            </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Historical Chart container -->
+    <section class="historical">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="./detail.js"></script>
+  </body>
+</html>
