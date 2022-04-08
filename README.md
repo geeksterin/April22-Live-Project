@@ -32,3 +32,8 @@ https://fontawesome.com
 
 
 BG -> EAEAEA upto F9F9F9
+
+UNIX Timestamp -> The number of seconds since January 1st, 1970.
+In JS, they save the number of milliseconds since Jan 01, 1970.
+
+1 second = 1000 milliseconds.

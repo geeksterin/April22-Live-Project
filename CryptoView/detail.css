@@ -27,3 +27,14 @@
 .mt_1_25 {
   margin-top: 1.25rem;
 }
+
+.mt_2 {
+  margin-top: 2rem;
+}
+
+.historical {
+  position: relative; 
+  height:15rem; 
+  width:50vw;
+  margin: auto;
+}
