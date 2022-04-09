@@ -19,12 +19,15 @@ function showResult(data) {
     const new_link = document.createElement('td');
 
     const new_img  = document.createElement('img');
+    const new_a = document.createElement('a');
 
     new_s_no.innerText = i + 1;
     new_img.src = single_data.thumb;
     new_logo.appendChild(new_img);
     new_name.innerText = single_data.name + " (" + single_data.symbol + ")";
-    new_link.innerText = "TODO";
+    new_a.innerText = "Show more";
+    new_a.href = `detail.html?coin=${single_data.id}`;
+    new_link.appendChild(new_a);
 
     new_row.appendChild(new_s_no);
     new_row.appendChild(new_logo);
@@ -37,4 +40,12 @@ function showResult(data) {
   }
 }
 
-fetch('https://api.coingecko.com/api/v3/search?query=bit').then(convertToJson).then(showResult);
+const search_field = document.getElementById('search_field');
+
+var url        = new URL(window.location.href);
+var params     = new URLSearchParams(url.search);
+let search_key = params.get("q");
+
+search_field.value = search_key;
+
+fetch(`https://api.coingecko.com/api/v3/search?query=${search_key}`).then(convertToJson).then(showResult);

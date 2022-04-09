@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  background-color: #EFEFEF;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -9,7 +8,10 @@ h1,h2,h3,h4,h5,h6,p {
 
 nav {
   height: 3rem;
-  background-color: #FFFFFF;
+  background-color: #CAF0F8;
+  padding: 0.25rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .flex_container {
@@ -31,7 +33,7 @@ nav {
 }
 
 .trending_coin {
-  background-color: #CAF0F8;
+  background-color: #ADE8F4;
   padding: 2rem;
   overflow-x: hidden;
 }
@@ -74,15 +76,27 @@ nav {
 
 .features {
   padding: 2rem;
-  background-color: #ADE8F4;
   justify-content: space-around;
   font-family: 'Nunito', sans-serif;
 }
 
 .features > .card {
+  position: relative;
+  top: 0px;
+  left: 0px;
   text-align: center;
   padding: 1rem;
   width: 25vw;
+  border: 1px solid #03045E;
+  box-shadow: 10px 10px 0px #03045E;
+  transition: 0.25s all;
+}
+
+.features > .card:hover {
+  position: relative;
+  top: -5px;
+  left: -5px;
+  box-shadow: 15px 15px 0px #03045E;
 }
 
 .card {
@@ -93,6 +107,7 @@ nav {
 
 footer {
   text-align: center;
+  background-color: #ADE8F4;
   padding: 1rem;
   font-family: 'Nunito', sans-serif;
 }
@@ -109,3 +124,53 @@ footer > h3 {
     left: -100%;
   }
 }
+
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+nav > h1 {
+  display: inline;
+}
+
+nav > button {
+  justify-self: flex-end;
+}
+
+ nav > div {
+   align-items: center;
+ }
+
+ .anchor_btn {
+  border: 1px solid gray;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  /* transition: 0.25s all; */
+  color: black;
+ }
+
+ .anchor_btn:hover {
+   background-color: grey;
+   color: white;
+ }
+
+ @media screen and (max-width: 400px) {
+   nav h1 {
+     display: none;
+   }
+ }
+
+ @media screen and (max-width: 850px) {
+   .main > img {
+     width: 60vw;
+   }
+   .features {
+     flex-direction: column;
+     align-content: stretch;
+   }
+   .features > .card {
+     width: initial;
+   }
+ }
